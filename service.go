@@ -169,7 +169,7 @@ func main() {
 			fmt.Println("Unable to save data")
 		}
 
-	})
+	}, stan.DurableName("my-durable"))
 	handle_requests()
 
 }
